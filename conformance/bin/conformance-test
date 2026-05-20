@@ -63,7 +63,7 @@ class ConformanceTester:
             return True
 
         import jsonschema
-        schema_path = os.path.join(os.path.dirname(__file__), "../spec/schemas/ai-catalog.schema.json")
+        schema_path = os.path.join(os.path.dirname(__file__), "../../spec/schemas/ai-catalog.schema.json")
         if not os.path.exists(schema_path):
             print_warning(f"Schema file not found at {schema_path}. Skipping JSON Schema validation.")
             return True

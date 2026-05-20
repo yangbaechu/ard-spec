@@ -644,7 +644,7 @@ The HTTP query interfaces (`POST /search` and `GET /agents`) exposed by complian
 
 To simplify development and guarantee complete compliance, this repository provides an official, zero-dependency **Conformance Testing CLI Tool** written in Python. It allows publishers to test their manifests and registry developers to validate their REST API servers.
 
-* **Testing Tool Executable**: [`bin/conformance-test`](../bin/conformance-test)
+* **Testing Tool Executable**: [`conformance/bin/conformance-test`](../conformance/bin/conformance-test)
 
 #### Features:
 * **Manifest validation mode**: Parses JSON manifests, runs strict JSON Schema checks (using the Python `jsonschema` library if installed), and executes custom semantic checks (e.g., URN formatting rules, Value-or-Reference enforcement, `representativeQueries` sizing).
@@ -655,22 +655,22 @@ To simplify development and guarantee complete compliance, this repository provi
 Validate a local or remote `ai-catalog.json` manifest:
 ```bash
 # Validate a local catalog file
-./bin/conformance-test manifest path/to/ai-catalog.json
+./conformance/bin/conformance-test manifest path/to/ai-catalog.json
 
 # Validate a remote well-known catalog manifest
-./bin/conformance-test manifest https://example.com/.well-known/ai-catalog.json
+./conformance/bin/conformance-test manifest https://example.com/.well-known/ai-catalog.json
 ```
 
 Validate a running Agent Registry REST API:
 ```bash
-./bin/conformance-test registry http://localhost:9010/api
+./conformance/bin/conformance-test registry http://localhost:9010/api
 ```
 
 #### One-Click Conformance Demo
 
 To instantly run a complete end-to-end verification suite utilizing a pre-bundled spec-compliant catalog manifest and a lightweight running mock Registry REST API server, run the automated demo script:
 ```bash
-./bin/run-conformance-demo
+./conformance/bin/run-conformance-demo
 ```
 This script performs manifest schema validation, launches a mock registry server in the background, executes live search and listing queries against it using the conformance tester, and gracefully terminates the server when finished.
 

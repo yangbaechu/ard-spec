@@ -103,7 +103,7 @@ Registries support three client-controlled federation models:
 ## 📂 Repository Structure
 
 * [**`spec/agentfinder.md`**](spec/agentfinder.md): The core Agent Finder discovery and federation specification document.
-* [**`bin/conformance-test`**](bin/conformance-test): The official, zero-dependency CLI testing tool to validate manifests and live registry REST APIs.
+* [**`conformance/`**](conformance/): The official Agent Finder conformance testing suite. Contains CLI validators, mock catalog manifests, mock registry REST API servers, and automated end-to-end demo tools.
 
 ---
 
