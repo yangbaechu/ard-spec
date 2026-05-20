@@ -2,7 +2,7 @@
 
 > **Federated Discovery and Search for AI Agents and Capabilities**
 
-Agent Finder is a standardized, domain-anchored discovery specification designed to catalog, search, and discover AI capabilities (including Model Context Protocol (MCP) servers, Agent-to-Agent (A2A) agent cards, skills, and other callable services) across federated networks. 
+Agent Finder is a standardized, domain-anchored discovery specification designed to catalog, search, and discover AI capabilities (including Model Context Protocol (MCP) servers, Agent-to-Agent (A2A) agent cards, skills, and other callable services) across federated networks. It is built on top of the foundational [ai-catalog](https://github.com/Agent-Card/ai-catalog) specification to ensure global federation and strict interoperability.
 
 This repository contains the formal specification and related documentation for **Agent Finder**.
 
@@ -16,6 +16,7 @@ This repository contains the formal specification and related documentation for 
 - [Federated Discovery & The Search API](#-federated-discovery--the-search-api)
 - [Repository Structure](#-repository-structure)
 - [Version Status](#-version-status)
+- [Ecosystem Alignment & Acknowledgments](#-ecosystem-alignment--acknowledgments)
 
 ---
 
@@ -109,3 +110,9 @@ Registries support three client-controlled federation models:
 * **Specification Version**: `v0.4.2 (Draft)`
 * **Status**: Proposal
 * **Latest Revision**: May 5, 2026
+
+---
+
+## 🤝 Ecosystem Alignment & Acknowledgments
+
+Agent Finder is directly based on and extends the [ai-catalog](https://github.com/Agent-Card/ai-catalog) specification. The ai-catalog standard provides the base artifact-agnostic data model, progressive trust layer, and validation rules. Agent Finder builds upon these standards to define dynamic registry search APIs (`POST /search`), federated query routing mechanisms, and domain-anchored naming schemes to enable dynamic runtime capability discovery.

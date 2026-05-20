@@ -58,7 +58,7 @@ To maintain a clean and implementable standard, the protocol delegates operation
 
 ## 4\. The Data Model
 
-The capability manifest (the file publishers host to advertise their agents) is the central data model.
+The capability manifest (the file publishers host to advertise their agents) is the central data model. This manifest structure builds upon and extends the schema defined by the [ai-catalog](https://github.com/Agent-Card/ai-catalog) specification, introducing specialized discovery attributes (such as domain-anchored URN identifiers, root-level capabilities, and representative queries) to ensure high-performance search and compatibility across the broader agent ecosystem.
 
 ### 4.1 The Capability Manifest (ai-catalog.json)
 
