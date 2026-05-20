@@ -102,8 +102,8 @@ Registries support three client-controlled federation models:
 
 ## 📂 Repository Structure
 
-* [**`spec/agentfinder.md`**](file:///Users/jbu/Development/agentfinder/spec/agentfinder.md): The core Agent Finder discovery and federation specification document.
-* [**`bin/conformance-test`**](file:///Users/jbu/Development/agentfinder/bin/conformance-test): The official, zero-dependency CLI testing tool to validate manifests and live registry REST APIs.
+* [**`spec/agentfinder.md`**](spec/agentfinder.md): The core Agent Finder discovery and federation specification document.
+* [**`bin/conformance-test`**](bin/conformance-test): The official, zero-dependency CLI testing tool to validate manifests and live registry REST APIs.
 
 ---
 
