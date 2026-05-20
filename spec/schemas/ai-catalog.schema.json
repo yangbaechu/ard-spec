@@ -46,30 +46,6 @@
       "items": {
         "$ref": "#/$defs/catalogEntry"
       }
-    },
-    "collections": {
-      "type": "array",
-      "description": "List of referenced or nested catalogs.",
-      "items": {
-        "type": "object",
-        "required": ["displayName", "url"],
-        "properties": {
-          "displayName": {
-            "type": "string",
-            "description": "Name of the referenced collection."
-          },
-          "url": {
-            "type": "string",
-            "format": "uri",
-            "description": "Remote HTTP URL to the referenced catalog manifest."
-          },
-          "description": {
-            "type": "string",
-            "description": "Short description of what the referenced catalog contains."
-          }
-        },
-        "additionalProperties": false
-      }
     }
   },
   "additionalProperties": false,

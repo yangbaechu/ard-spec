@@ -142,11 +142,11 @@ A manifest file hosted at /.well-known/ai-catalog.json lists the available artif
           }
         ]
       }
-    }
-  ],
-  "collections": [
+    },
     {
+      "identifier": "urn:ai:acme.com:catalog:engineering",
       "displayName": "Engineering Department Catalogs",
+      "type": "application/ai-catalog+json",
       "url": "https://acme.com/catalogs/engineering.json",
       "description": "Sub-catalogs containing CI/CD and internal deployment agents."
     }

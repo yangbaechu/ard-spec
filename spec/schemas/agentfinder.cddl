@@ -8,8 +8,7 @@ start = ai-catalog-manifest
 ai-catalog-manifest = {
   specVersion: "1.0",
   ? host: host-info,
-  entries: [+ catalog-entry],
-  ? collections: [+ catalog-collection]
+  entries: [+ catalog-entry]
 }
 
 host-info = {
@@ -18,12 +17,6 @@ host-info = {
   ? documentationUrl: tstr,
   ? logoUrl: tstr,
   ? trustManifest: trust-manifest
-}
-
-catalog-collection = {
-  displayName: tstr,
-  url: tstr,
-  ? description: tstr
 }
 
 catalog-entry = {
