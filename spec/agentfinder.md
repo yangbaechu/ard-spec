@@ -426,11 +426,14 @@ Accepts a natural language query with optional structured constraints. Returns c
 
 | Field | Type | Description |
 | :---- | :---- | :---- |
-| text | String | Required. Natural language description of the need. |
-| type | String | Optional. Filter by artifact type. |
-| compliance | String | Optional. Filter by compliance requirement. |
-| publisher | String | Optional. Filter by publisher name or identifier. |
-| federation | String | Optional. auto (default), referrals, or none. |
+| query | Object | Required. Contains the search criteria (see fields below). |
+| query.text | String | Required (inside query). Natural language description of the need. |
+| query.type | String | Optional (inside query). Filter by artifact type. |
+| query.compliance | String | Optional (inside query). Filter by compliance requirement. |
+| query.publisher | String | Optional (inside query). Filter by publisher name or identifier. |
+| query.federation | String | Optional (inside query). auto (default), referrals, or none. |
+| pageSize | Integer | Optional (root-level). Max results to return per page (default: 10, max: 100). |
+| pageToken | String | Optional (root-level). Pagination token to retrieve the next page. |
 
 **Response Schema:**
 
