@@ -105,7 +105,7 @@ Registries support three client-controlled federation models:
 
 ## 📂 Repository Structure
 
-* [**`spec/agentfinder.md`**](spec/agentfinder.md): The core Agent Finder discovery and federation specification document.
+* [**`spec/ard.md`**](spec/ard.md): The core Agent Finder discovery and federation specification document.
 * [**`spec/trust-model-conceptual-guide.md`**](spec/trust-model-conceptual-guide.md): Conceptual guide explaining trustManifest dimensions, identity decoupling, and domain alignment.
 * [**`spec/cryptographic-identity-verification.md`**](spec/cryptographic-identity-verification.md): Technical implementation guide for static and dynamic cryptographic trust verification.
 * [**`spec/urn-naming-guide.md`**](spec/urn-naming-guide.md): Best practices and naming conventions for domain-anchored URN namespaces.

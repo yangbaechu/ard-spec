@@ -711,7 +711,7 @@ The schema specifications are provided across three distinct formats, serving di
 
 The core data structures for the `ai-catalog.json` manifest, `CatalogEntry` models, zero-trust `trustManifest` security envelope, and Search Registry API payloads are formally specified using **Concise Data Definition Language (CDDL - RFC 8610)**. 
 
-* **Authoritative Schema File**: [`spec/schemas/agentfinder.cddl`](schemas/agentfinder.cddl)
+* **Authoritative Schema File**: [`spec/schemas/ard.cddl`](schemas/ard.cddl)
 
 ### D.2 The `ai-catalog.json` Manifest Schema (JSON Schema)
 
@@ -732,7 +732,7 @@ npx ajv-cli validate -s spec/schemas/ai-catalog.schema.json -d path/to/ai-catalo
 
 The HTTP query interfaces (`POST /search` and `GET /agents`) exposed by compliant Agent Registries are formally defined using the **OpenAPI 3.1.0 Specification** in YAML.
 
-* **Authoritative Specification File**: [`spec/schemas/agentfinder.openapi.yaml`](schemas/agentfinder.openapi.yaml)
+* **Authoritative Specification File**: [`spec/schemas/ard.openapi.yaml`](schemas/ard.openapi.yaml)
 * **Key Integration Benefits**:
   * Integrates paths, queries, status responses, and paging logic directly.
   * References the JSON Schema `ai-catalog.schema.json` schema files to ensure search and list return types are statically bound to the specification's schema constraints.
