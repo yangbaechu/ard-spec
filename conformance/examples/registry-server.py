@@ -45,6 +45,12 @@ MOCK_CATALOG_ENTRIES = [
     "type": "application/ai-catalog+json",
     "url": "https://acme.com/catalogs/engineering.json",
     "description": "Nested catalog containing CI/CD and internal deployment agents."
+  },
+  {
+    "identifier": "urn:air:acme.com:tool:unit-converter",
+    "displayName": "Unit Converter",
+    "type": "application/mcp-server-card+json",
+    "url": "https://api.acme.com/mcp/unit-converter.json"
   }
 ]
 
@@ -113,7 +119,7 @@ class MockRegistryHandler(BaseHTTPRequestHandler):
                 matched = False
 
                 # Match text against keywords in display name, description, or representative queries
-                if query_text in entry["displayName"].lower() or query_text in entry["description"].lower():
+                if query_text in entry["displayName"].lower() or query_text in entry.get("description", "").lower():
                     score += 30
                     matched = True
                 

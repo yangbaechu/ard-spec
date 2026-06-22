@@ -34,6 +34,12 @@
       "type": "application/ai-catalog+json",
       "url": "https://acme.com/catalogs/engineering.json",
       "description": "Nested catalog containing CI/CD and internal deployment agents."
+    },
+    {
+      "identifier": "urn:air:acme.com:tool:unit-converter",
+      "displayName": "Unit Converter",
+      "type": "application/mcp-server-card+json",
+      "url": "https://api.acme.com/mcp/unit-converter.json"
     }
   ]
 }
